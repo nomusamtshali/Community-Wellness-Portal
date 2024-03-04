@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Bafokeng Wellness Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <img
+          class="w-24 h-24 ml-4"
+          src="images/royal bafokeng nation.png"
+          alt="royal bafokeng nation logo"
+        />
+        <h1 class="text-3xl font-bold">Royal Bafokeng Wellness Portal</h1>
+        <button
+          class="text-white mr-8 hover:text-gray-300"
+          onclick="toggleMenu()"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu-->
+    <nav id="mobile-menu" class="bg-blue-500 text-white py-2 hidden">
+      <ul class="container mx-auto flex flex-col space-y-2">
+        <li>
+          <a href="#" onclick="navigateTo('home')" class="hover:text-gray-300">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            onclick="navigateTo('fitness')"
+            class="hover:text-gray-300"
+          >
+            Fitness
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            onclick="navigateTo('mental-health')"
+            class="hover:text-gray-300"
+          >
+            Mental Health
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            onclick="navigateTo('nutrition')"
+            class="hover:text-gray-300"
+          >
+            Nutrition
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            onclick="navigateTo('support-groups')"
+            class="hover:text-gray-300"
+          >
+            Support Groups
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <main class="container mx-auto mt-8" id="main-content">
+      <section id="home" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">
+          Welcome to Royal Bafokeng Wellness Portal
+        </h2>
+        <p class="my-16">
+          At Royal Bafokeng Wellness Portal, we're dedicated to fostering a
+          healthier and happier community. Our portal is meticulously designed
+          to offer you a wide array of resources and unwavering support to
+          prioritize your well-being. Whether you're seeking fitness classes,
+          mental health resources, or supportive community connections, we're
+          here to empower you on your journey to better health. Join us as we
+          collaboratively work towards creating a stronger, more vibrant
+          community where everyone can thrive.
+        </p>
+
+        <div class="flex grid-cols-3 gap-6 justify-center items-center">
+          <img src="images/home 2.jpeg" alt="coach addressing team" />
+          <img src="images/home 3.jpeg" alt="man smiling" />
+          <img src="images/home 1.jpeg" alt="basketball team" />
+        </div>
+
+        <p class="my-16">
+          Empowering our community to lead healthier and happier lives together.
+        </p>
+      </section>
+    </main>
+    <!-- End of Home Section -->
+
+    <!-- Fitness Section -->
+    <section id="fitness" class="hidden">
+      <h2 class="text-3xl font-bold mb-4">Fitness</h2>
+      <p class="text-lg">
+        At our Community Health and Wellness Portal, we offer a variety of
+        fitness classes suitable for all ages and fitness levels. Whether you're
+        a beginner looking to kickstart your fitness journey or a seasoned
+        athlete wanting to try something new, we have something for everyone.
+      </p>
+      <p class="text-lg">
+        Join us in our mission to promote physical well-being and vitality in
+        our community.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Benefits of Fitness Classes:</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>Improved cardiovascular health</li>
+        <li>Increased strength, flexibility, and endurance</li>
+        <li>Weight management and body composition improvements</li>
+        <li>Stress reduction and improved mood</li>
+        <li>Enhanced coordination and balance</li>
+        <li>Opportunities for socialization and community building</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-4 text-center">How to Get Started</h2>
+      <p class="mb-4 text-center">
+        Getting started with our fitness classes is easy! Simply browse our
+        class schedule, choose the classes that interest you, and sign up online
+        or in-person. Most classes require no prior experience, and our
+        certified instructors will provide modifications and adjustments to suit
+        your individual needs and fitness goals.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4 text-center">Class Schedule</h2>
+      <p class="mb-4 text-center">
+        Our class schedule varies each week, offering morning, afternoon, and
+        evening sessions to accommodate busy schedules. Check our website
+        regularly for updated class times and locations.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4 text-center">
+        Special Events and Workshops
+      </h2>
+      <p class="mb-4 text-center">
+        In addition to regular classes, we also host special events and
+        workshops throughout the year, such as outdoor fitness challenges,
+        nutrition seminars, and wellness retreats. Keep an eye on our events
+        calendar for upcoming opportunities to further enhance your health and
+        well-being.
+      </p>
+    </section>
+    <!-- End of Fitness Section-->
+
+    <!-- Mental Health Section -->
+    <section id="mental-health" class="hidden">
+      <h2 class="text-3xl font-bold mb-4">Mental Health</h2>
+      <h2 class="text-3xl font-bold mb-8">Mental Health</h2>
+      <h2 class="text-3xl font-bold mb-8">Mental Health Awareness</h2>
+      <p class="mb-8">
+        Welcome to our Mental Health Awareness section! At our Community
+        Wellness Portal, we recognize the importance of mental health in overall
+        well-being. Explore our resources and information to learn more about
+        mental health, find support, and promote mental wellness in our
+        community.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Understanding Mental Health</h3>
+      <p class="mb-8">
+        Mental health encompasses our emotional, psychological, and social
+        well-being. It affects how we think, feel, and act, and plays a crucial
+        role in our ability to cope with stress, relate to others, and make
+        choices. Mental health is just as important as physical health, and
+        taking care of our mental well-being is essential for leading a
+        fulfilling life.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Common Mental Health Challenges</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Anxiety Disorders: Characterized by excessive worry, fear, or
+          nervousness that interferes with daily activities.
+        </li>
+        <li>
+          Depression: A mood disorder that causes persistent feelings of
+          sadness, hopelessness, and loss of interest in activities.
+        </li>
+        <li>
+          Bipolar Disorder: Marked by extreme mood swings that include periods
+          of high energy and euphoria (mania) and episodes of depression.
+        </li>
+        <li>
+          Post-Traumatic Stress Disorder (PTSD): Occurs after experiencing a
+          traumatic event and may involve flashbacks, nightmares, and severe
+          anxiety.
+        </li>
+        <li>
+          Schizophrenia: A chronic mental disorder characterized by
+          hallucinations, delusions, disordered thinking, and impaired social
+          functioning.
+        </li>
+        <li>
+          Eating Disorders: Including anorexia nervosa, bulimia nervosa, and
+          binge-eating disorder, which involve unhealthy behaviors related to
+          food and body image.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Promoting Mental Wellness</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Self-Care: Practice self-care activities that nurture your mind, body,
+          and spirit, such as exercise, meditation, hobbies, and spending time
+          with loved ones.
+        </li>
+        <li>
+          Healthy Lifestyle: Maintain a healthy lifestyle by eating nutritious
+          foods, getting regular exercise, getting enough sleep, and avoiding
+          harmful substances.
+        </li>
+        <li>
+          Stress Management: Learn effective stress management techniques, such
+          as deep breathing, mindfulness, journaling, and seeking social
+          support.
+        </li>
+        <li>
+          Seeking Help: Don't hesitate to seek professional help if you're
+          struggling with your mental health. Therapy, counseling, and
+          medication can be effective treatments for mental health disorders.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Breaking the Stigma</h3>
+      <p class="mb-8">
+        Unfortunately, there is still stigma surrounding mental illness, which
+        can prevent individuals from seeking help and accessing treatment. We
+        believe in breaking the stigma and promoting open, honest conversations
+        about mental health. Everyone deserves support, understanding, and
+        access to mental health resources.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Additional Resources</h3>
+      <p>
+        Explore our additional resources for more information on mental health,
+        including articles, videos, helplines, and community support groups.
+        Together, we can create a community that supports mental wellness and
+        prioritizes mental health for all its members.
+      </p>
+      <p class="text-lg">
+        Taking care of your mental health is just as important as physical
+        health. Explore our resources and support groups for stress management,
+        mindfulness, and more.
+      </p>
+      <p class="text-lg">
+        Remember, you are not alone. Reach out for help and support whenever you
+        need it.
+      </p>
+    </section>
+    <!-- End of Mental Health -->
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="hidden">
+      <h1 class="text-3xl font-bold mb-4">Nutrition</h1>
+      <h2 class="text-3xl font-bold mb-8">Nutrition Tips</h2>
+      <p class="mb-8">
+        Welcome to our Nutrition Tips section! At our Community Health and
+        Wellness Portal, we believe that making informed choices about nutrition
+        is essential for leading a healthy lifestyle. Explore our nutrition tips
+        and resources to help you make better food choices and improve your
+        overall well-being.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Balanced Diet</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Fill half your plate with fruits and vegetables for vitamins,
+          minerals, and fiber.
+        </li>
+        <li>
+          Include lean proteins such as poultry, fish, beans, tofu, and eggs for
+          muscle growth and repair.
+        </li>
+        <li>
+          Choose whole grains like brown rice, quinoa, oats, and whole wheat
+          bread for sustained energy and fiber.
+        </li>
+        <li>
+          Incorporate healthy fats from sources like avocados, nuts, seeds, and
+          olive oil for heart health.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Portion Control</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>Use smaller plates and bowls to help control portion sizes.</li>
+        <li>
+          Pay attention to serving sizes listed on food labels and measure out
+          appropriate portions.
+        </li>
+        <li>
+          Avoid eating straight from the package, as it can lead to overeating.
+        </li>
+        <li>
+          Listen to your body's hunger and fullness cues, and stop eating when
+          you feel satisfied.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Hydration</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Carry a reusable water bottle with you to stay hydrated on the go.
+        </li>
+        <li>
+          Drink water before, during, and after exercise to replenish fluids
+          lost through sweat.
+        </li>
+        <li>
+          Infuse water with fresh fruits, herbs, or cucumbers for added flavor
+          and hydration.
+        </li>
+        <li>
+          Limit sugary drinks like soda, fruit juices, and energy drinks, as
+          they can contribute to excess calories and sugar intake.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Mindful Eating</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Eat slowly and savor each bite, paying attention to the taste,
+          texture, and aroma of your food.
+        </li>
+        <li>
+          Minimize distractions while eating, such as watching TV or scrolling
+          on your phone.
+        </li>
+        <li>
+          Listen to your body's hunger and fullness signals, and eat only when
+          you're hungry.
+        </li>
+        <li>
+          Be mindful of emotional eating triggers and find alternative ways to
+          cope with stress or boredom.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Additional Resources</h3>
+      <p>
+        Explore our additional resources for more information on nutrition,
+        healthy recipes, meal planning tips, and more. We're here to support you
+        on your journey to better health through nutrition!
+      </p>
+      <p class="text-lg">
+        Fuel your body with nutritious foods and learn about healthy eating
+        habits. Our nutrition tips and recipes will help you make better choices
+        for a balanced diet.
+      </p>
+      <p class="text-lg">
+        Eating well is the foundation of good health. Let's make healthier
+        choices together!
+      </p>
+    </section>
+    <!-- End of Nutrition Section -->
+
+    <!-- Support Group Section-->
+    <section id="support-groups" class="hidden">
+      <h2 class="text-3xl font-bold mb-4">Support Groups</h2>
+      <h2 class="text-3xl font-bold mb-8">Support Groups</h2>
+      <p class="mb-8">
+        Welcome to our Support Groups section! At our Community Wellness Portal,
+        we understand the importance of support and connection when facing
+        life's challenges. Explore our support groups and resources to find the
+        encouragement and understanding you need to thrive.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Types of Support Groups</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          <strong>Mental Health Support:</strong> Join our mental health support
+          group to connect with others facing similar challenges, share
+          experiences, and learn coping strategies for managing stress, anxiety,
+          depression, and other mental health issues.
+        </li>
+        <li>
+          <strong>Chronic Illness Support:</strong> If you're living with a
+          chronic illness or condition, our chronic illness support group
+          provides a safe space to discuss your journey, exchange tips for
+          self-care, and find comfort in knowing you're not alone.
+        </li>
+        <li>
+          <strong>Grief and Loss Support:</strong> Coping with the loss of a
+          loved one can be overwhelming. Our grief and loss support group offers
+          compassion, validation, and practical guidance as you navigate the
+          grieving process and find healing.
+        </li>
+        <li>
+          <strong>Addiction Recovery Support:</strong> For those on the path to
+          recovery from addiction, our addiction recovery support group offers
+          accountability, encouragement, and resources to help you stay sober
+          and build a fulfilling life free from substance abuse.
+        </li>
+        <li>
+          <strong>Parenting Support:</strong> Parenting can be challenging,
+          especially during times of transition or uncertainty. Our parenting
+          support group provides a supportive community for parents to share
+          struggles, seek advice, and celebrate victories together.
+        </li>
+        <li>
+          <strong>Caregiver Support:</strong> If you're caring for a loved one
+          with a chronic illness or disability, our caregiver support group
+          offers a space to discuss caregiving challenges, share resources, and
+          prioritize self-care amidst the demands of caregiving.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">Benefits of Support Groups</h3>
+      <ul class="list-disc list-inside mb-8">
+        <li>
+          Validation and Understanding: Connect with others who truly understand
+          what you're going through and validate your experiences.
+        </li>
+        <li>
+          Emotional Support: Receive empathy, encouragement, and comfort from
+          fellow group members who offer a listening ear and non-judgmental
+          support.
+        </li>
+        <li>
+          Practical Advice and Resources: Gain valuable insights, coping
+          strategies, and practical tips from peers who have faced similar
+          challenges and found effective solutions.
+        </li>
+        <li>
+          Sense of Belonging: Feel a sense of belonging and camaraderie within a
+          supportive community where you can freely express yourself and be
+          accepted for who you are.
+        </li>
+        <li>
+          Empowerment and Growth: Build resilience, self-confidence, and
+          empowerment as you share your story, learn from others, and navigate
+          life's ups and downs together.
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-bold mb-4">How to Join a Support Group</h3>
+      <p class="mb-8">
+        Joining a support group is easy and confidential. Simply browse our list
+        of support groups, choose the group that aligns with your needs and
+        interests, and reach out to our facilitators or coordinators for more
+        information on meeting times, locations, and registration details. Most
+        support groups are free of charge and open to all members of the
+        community.
+      </p>
+
+      <h3 class="text-2xl font-bold mb-4">Additional Resources</h3>
+      <p>
+        Explore our additional resources for more information on support groups,
+        self-help resources, counseling services, and community events. We're
+        here to support you on your journey to healing, growth, and resilience.
+      </p>
+      <p class="text-lg">
+        Find support and connection in our community support groups. Whether
+        you're dealing with a health challenge or simply seeking companionship,
+        we're here for you.
+      </p>
+      <p class="text-lg">
+        Share your experiences, learn from others, and create lasting bonds
+        within our supportive community.
+      </p>
+    </section>
+    <!-- End of Support Group Section-->
+
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-item">
+          <h3 class="font-bold text-lg">Contact</h3>
+          <div>
+            <i class="material-icons">Phone:</i
+            ><a href="tel:+27 14 573 4100">+27 14 573 4100</a>
+          </div>
+          <div>
+            <i class="material-icons">Email:</i
+            ><a href="mailto:mike@uprightbuildersvt.com">contact@hob.co.za</a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h3 class="font-bold text-lg">Social Media</h3>
+
+          <div>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 32 32"
+              fill="none"
+              class="mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2"
+                y="2"
+                width="28"
+                height="28"
+                rx="6"
+                fill="url(#paint0_radial_87_7153)"
+              />
+              <rect
+                x="2"
+                y="2"
+                width="28"
+                height="28"
+                rx="6"
+                fill="url(#paint1_radial_87_7153)"
+              />
+              <rect
+                x="2"
+                y="2"
+                width="28"
+                height="28"
+                rx="6"
+                fill="url(#paint2_radial_87_7153)"
+              />
+              <path
+                d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                fill="white"
+              />
+              <defs>
+                <radialGradient
+                  id="paint0_radial_87_7153"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
+                >
+                  <stop stop-color="#B13589" />
+                  <stop offset="0.79309" stop-color="#C62F94" />
+                  <stop offset="1" stop-color="#8A3AC8" />
+                </radialGradient>
+                <radialGradient
+                  id="paint1_radial_87_7153"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
+                >
+                  <stop stop-color="#E0E8B7" />
+                  <stop offset="0.444662" stop-color="#FB8A2E" />
+                  <stop offset="0.71474" stop-color="#E2425C" />
+                  <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient
+                  id="paint2_radial_87_7153"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
+                >
+                  <stop offset="0.156701" stop-color="#406ADC" />
+                  <stop offset="0.467799" stop-color="#6A45BE" />
+                  <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <a class="hover:text-gray-500" href="javascript:void(0)"
+              >heartofbafokeng</a
+            >
+          </div>
+
+          <div>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              class="mr-2"
+            >
+              <path
+                fill="#1877F2"
+                d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"
+              />
+              <path
+                fill="#ffffff"
+                d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"
+              />
+            </svg>
+            <a class="hover:text-gray-500" href="javascript:void(0)"
+              >heartofbafokeng</a
+            >
+          </div>
+
+          <div>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              class="mr-2"
+            >
+              <path
+                fill="#1D9BF0"
+                d="M13.567 5.144c.008.123.008.247.008.371 0 3.796-2.889 8.173-8.172 8.173v-.002A8.131 8.131 0 011 12.398a5.768 5.768 0 004.25-1.19 2.876 2.876 0 01-2.683-1.995c.431.083.875.066 1.297-.05A2.873 2.873 0 011.56 6.348v-.036c.4.222.847.345 1.304.36a2.876 2.876 0 01-.89-3.836 8.152 8.152 0 005.92 3 2.874 2.874 0 014.895-2.619 5.763 5.763 0 001.824-.697 2.883 2.883 0 01-1.262 1.588A5.712 5.712 0 0015 3.656a5.834 5.834 0 01-1.433 1.488z"
+              />
+            </svg>
+            <a class="hover:text-gray-500" href="javascript:void(0)"
+              >heartofbafokeng</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span>&copy; 2024 Community Health and Wellness Portal.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
