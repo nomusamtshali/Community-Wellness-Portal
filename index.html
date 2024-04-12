@@ -19,19 +19,22 @@
           src="images/royal bafokeng nation.png"
           alt="royal bafokeng nation logo"
         />
-        <h1 class="text-3xl font-bold">Royal Bafokeng Wellness Portal</h1>
+        <h1 class="px-4 font-bold md:text-2xl lg:text-3xl">Royal Bafokeng Wellness Portal</h1>
         <button
-          class="text-white mr-8 hover:text-gray-300"
+          class="text-white mr-4 hover:text-gray-300"
           onclick="toggleMenu()"
         >
-          Menu
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg> <!--SVG for menu to button to appear only when display is less than 768px-->
+          <p class="hidden md:block">Menu</p>
         </button>
       </div>
     </header>
 
     <!-- Mobile Menu-->
     <nav id="mobile-menu" class="bg-blue-500 text-white py-2 hidden">
-      <ul class="container mx-auto flex flex-col space-y-2">
+      <ul class="container ml-4 mr-auto flex flex-col space-y-2">
         <li>
           <a href="#" onclick="navigateTo('home')" class="hover:text-gray-300">
             Home
@@ -83,10 +86,10 @@
     <!-- Home Section -->
     <main class="container mx-auto mt-8" id="main-content">
       <section id="home" class="text-center">
-        <h2 class="text-3xl font-bold mb-4">
+        <h2 class="text-3xl font-bold mb-4 px-2">
           Welcome to Royal Bafokeng Wellness Portal
         </h2>
-        <p class="my-16">
+        <p class="my-16 px-2">
           At Royal Bafokeng Wellness Portal, we're dedicated to fostering a
           healthier and happier community. Our portal is meticulously designed
           to offer you a wide array of resources and unwavering support to
@@ -97,13 +100,13 @@
           community where everyone can thrive.
         </p>
 
-        <div class="flex grid-cols-3 gap-6 justify-center items-center">
-          <img src="images/home 2.jpeg" alt="coach addressing team" />
-          <img src="images/home 3.jpeg" alt="man smiling" />
-          <img src="images/home 1.jpeg" alt="basketball team" />
+        <div class="flex flex-col space-y-2 md:grid md:grid-cols-3 md:gap-6 md:justify-center md:items-center">
+          <img src="images/home 2.jpeg" class="px-2" alt="coach addressing team" />
+          <img src="images/home 3.jpeg" class="px-2" alt="man smiling" />
+          <img src="images/home 1.jpeg" class="px-2" alt="basketball team" />
         </div>
 
-        <p class="my-16">
+        <p class="my-16 px-2">
           Empowering our community to lead healthier and happier lives together.
         </p>
       </section>
@@ -529,8 +532,8 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer-wrapper">
-        <div class="footer-item">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="footer-item items-center">
           <h3 class="font-bold text-lg">Contact</h3>
           <div>
             <i class="material-icons">Phone:</i
@@ -541,7 +544,7 @@
             ><a href="mailto:mike@uprightbuildersvt.com">contact@hob.co.za</a>
           </div>
         </div>
-        <div class="footer-item">
+        <div class="footer-item items-center">
           <h3 class="font-bold text-lg">Social Media</h3>
 
           <div>
